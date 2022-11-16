@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="../css/style.css">  
+			
+	</head>
+	<body>
+		<!--   name ="" 갑슬 파라미터의 이름이 된다 !!!!!! 값은 value=""의 값이 값으로 넘어간다  !!
+		  name-"" 값이 같아야 라디오 버튼 중에 하나만 선택 가능하다   : 여러값을 전달하면, 서버측에서는 이를 배열로 받크다
+		name 값이 다름다면 모든 버튼 선택이 가능해지므로 주의하자
+		-->
+		<h4> css 테스트</h4>
+		<form>
+		<input id="fav_language"type="radio" name="fav_language" value="html" checked="checked">
+		<label for="fav_language">HTML</label>
+		<br/>
+		
+		<input id="fav_language2"type="radio" name="fav_language2" value="CSS">
+		<label for="fav_language2">CSS</label>
+		<br/>
+
+					
+		<input type="submit" vaule="전송">
+		
+		</form>
+	</body>
+</html>

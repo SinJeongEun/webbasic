@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>	
+		<style>
+		 input:checked {width: 20px; height: 20px;}		
+		input[type=radio]:checked {width: 30px; height: 30px;}  //radio에만 적용
+		</style>
+	</head>
+	<body>
+		<form>
+			<div>
+				<input id="fav_language"type="radio" name="fav_language" value="CSS">
+				<label for="fav_language">CSS</label>
+				<br/>
+				
+				<input id="fav_language2"type="radio" name="fav_language" value="html" checked="checked">
+				<label for="fav_language2">HTML</label>
+				<br/>
+				
+				<input id="fav_language3"type="radio" name="fav_language" value="CSS">
+				<label for="fav_language3">CSS</label>
+				<br/>				
+			</div>
+			
+			<hr/>
+			
+			<div>
+				<input id="hobby1"type="checkbox" name="hobby" value="Game">
+				<label for="hobby1">Game</label>
+				<br/>
+				
+				<input id="hobby2"type="checkbox" name="hobby" value="Movie" checked="checked">
+				<label for="hobby2">Movie</label>
+				<br/>
+				
+				<input id="hobby3"type="checkbox" name="hobby" value="Music">
+				<label for="hobby3">Music</label>
+				<br/>				
+			</div>
+				
+		</form>
+	</body>
+</html>
