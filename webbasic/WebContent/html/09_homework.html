@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>Layout</title>
+      <style>
+         
+         #wrapper {
+            width: 1000px;
+            height: 1200px;
+            margin: 0px auto;
+           /* background-color: yellow;*/
+        
+         }
+      
+         #header {
+            border: 1px solid;
+            height:2%;
+         }
+         
+         #searchbar {
+        	 height: 10%;  
+        	 width:100%;
+        	
+         }
+         
+         img {
+         	width:100%;
+         	height: 100%;
+   			
+         }
+  /********************** 중간  ************     */        
+         #navbar {
+         	padding : 5px;
+         	height: 5%;
+         }
+         
+         #menubar {
+			 float: left;      
+			 width: 80%;
+			/* background-image: url( "../images/searchbar.png" );*/
+         }
+         
+         #weather {
+			 float: left;   
+			 width: 20%;      
+         }
+         
+    /********************** 중간  ************     */ 
+    
+		 .center {
+		    height: 30%; 
+		    width: 100%		 
+		    
+	     }  
+		      
+         .sidebar {
+            width: 70%;
+            float: left;
+            box-sizing: border-box;
+            padding: 0.3rem;
+         }
+         
+         .news1{
+         	margin-bottom: 4px;
+         	height: 15%;
+         }
+         
+          .news2{
+         	margin-bottom: 4px;
+         	height: 15%;
+         }
+         
+          .newsboard{
+         	margin-bottom: 4px;
+         	height: 70%;
+         }
+ /********************** 중간  ************     */
+         .content{
+            width: 30%;
+            height:100%;
+            float: left;
+            box-sizing: border-box;
+            padding: 0.15rem;
+            margin-bottom: 1rem;
+         }
+         
+         #login{
+          height: 40%;
+         }
+         
+         #money{
+          height: 20%;
+         }
+         
+         #trend{
+          height: 40%;
+         }
+         
+         #webtoonWrapper{
+        	float:left;
+        	padding : 0.1rem;
+         	width: 70%;
+         	height: 100%;
+         }
+         
+         #webtoonMain{
+         	width: 50%;
+         	float: left;
+         }
+         
+         .toon {
+         	width: 50%;
+         	float: left;
+         }
+        
+        
+        #shoppingWrapper {
+        	float:left;
+        	width: 29%;
+        	height: 100%;
+        	box-sizing: border-box;
+       	}
+       	
+       	.shop{
+       		width :100%;
+       		height: 50%;
+       		box-sizing: border-box;
+       	}
+       	
+       	.product{
+       		width: 30%;
+       		height:100%;
+       		float:left;
+       		margin-right: 3%;
+       		box-sizing: border-box;
+       	}
+          
+         /********************** 중간  ************     */
+         #footer {
+            border: 1px dashed black;
+            clear: both;
+         }
+      </style>
+   </head>
+   <body>
+   <div> <img src="../images/banner.png"></div>
+      <div id="wrapper">
+         <div id="header"><img src="../images/banner2.png"></div>
+    	 <div id="searchbar"><img src="../images/searchbar.png"> </div>
+    	 
+   		<div id="navbar"> 
+   			<div id="menubar"><img src="../images/menu.png"></div>
+   			<div id="weather"> <img src="../images/weather.png"></div>
+   		</div>
+   
+         <div class="center">
+            <div class="sidebar">
+            	<div class="news1"><img src="../images/newsmenu.png"></div>
+            	<div class="news2"><img src="../images/newstand.png"></div>
+            	<div class="newsboard"><img src="../images/newstable.png"></div>
+            </div>
+            
+            <div class="content">
+            	<div id="login"><img src="../images/login.png"></div>
+            	<div id="money"><img src="../images/moeny.png"></div>
+            	<div id="trend"><img src="../images/trendshopping.png"></div>
+            </div>
+         </div>
+         
+         
+         <div class="center">
+	         <div id="webtoonWrapper">
+				<div class="news1"><img src="../images/today.jpg"></div>
+				<div class="news2"><img src="../images/submenu.jpg"></div>
+				<div class="newsboard">
+				
+					<div id="webtoonMain">
+						<img src="../images/webtoon_main.jpg">
+					</div>
+					<div class="toon"><img src="../images/webtoon_1.jpg"></div>
+					<div class="toon"><img src="../images/webtoon_2.jpg"></div>
+				</div>
+	         </div>
+	         
+	          <div id="shoppingWrapper">
+	          	<div class="shop">
+	            	<div class="product"><img src="../images/shopping1_1.jpg"></div>
+	            	<div class="product"><img src="../images/shopping1_2.jpg"></div>
+	            	<div class="product"><img src="../images/shopping1_3.jpg"></div>
+            	</div>
+            
+           		 <div class="shop">
+		            <div class="product"><img src="../images/shopping2_1.jpg"></div>
+		            <div class="product"><img src="../images/shopping2_2.jpg"></div>
+		            <div class="product"><img src="../images/shopping2_3.jpg"></div>
+           		 </div>
+            
+         	 </div>
+         
+        
+         </div>
+         
+      </div>
+   </body>
+</html>
