@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	<title>Insert title here</title>	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	
+	<script>
+		const arr1 = [];
+		
+		// 맨 끝에 항복 추가
+		arr1.push("apple");
+		arr1.push("winter");
+		console.log(arr1);
+		
+		//항목 삽입
+		const arr2 = ["banana", "orange", "apple", "mango"];
+		arr2.splice(2, 0, "kiwi");  // 2번째에 0개를 삭제하고 kiwi를 넣는다
+		console.log(arr2);
+		
+		//항목 삭제
+		const arr3 = ["banana", "orange", "apple", "mango"];
+		arr3.splice(2,1); // 2번 인덱스부터 1개를 삭제한다.
+		console.log(arr3);
+		
+		//부분 삭제
+		const arr4 = ["banana", "orange", "apple", "mango"];
+		arr4.splice(1,2); //1번 인덱스 부터 2개 삭제한다
+		console.log(arr4);
+		
+		//항목 정렬
+		const arr5 = ["banana", "orange", "apple", "mango"];
+// 		arr5.sort(); // 오름차순
+		console.log(arr5);
+		
+		// 내림 차순 전에 반드시 올바르게 정렬을 해야 원하는 내림차순이 구현된다
+		arr5.reverse();  //내림차순
+		console.log(arr5);	
+	</script>
+	<body>
+		
+	</body>
+</html>
