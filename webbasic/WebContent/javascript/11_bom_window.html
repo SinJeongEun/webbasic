@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">		
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>		
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	<body>
+		<script>
+			function func1() {
+			// window.innerWidth,  innerHeight 속성
+			console.log(window.innerWidth, innerWidth);
+			console.log(window.innerHeight, innerHeight);				
+			}
+		
+			function func2() {
+				// window의 다이얼로그와 관련된 메소드
+				window.alert("메시지입니다.");				
+			}
+			
+			function func3() {
+				
+				// 확인 여부를 묻는 다이얼로그
+// 				var result = window.confirm("주문을 하시겠습니까?");
+// 				console.log(result);
+				
+// 				// 입력을 받는 다이얼로그                                                                                                                          
+// 				if(result) {
+// 					var value = window.prompt("정보를 입력하세요");
+// 					console.log(value);
+// 				}
+				
+				// 사용자 정의 다이얼로그
+				//window.open("https://www.naver.com", "", "top=100, left=100, width=100, height=200");
+				//window.open("https://www.naver.com", "_blank"); // _blank : 새로운 탭에서 명시한 창이 뜬다
+				window.open("https://www.naver.com", "_self"); // _self : 현배 텝에서 명시찬 창이 열린다.
+
+			}
+		</script>
+		
+		<div class="card">
+			<div class="card-header">window Properties</div>
+			<div class="card-body">
+				<button class="btn btn-info" onclick="func1()">innerWidth, innerHeight 속성</button>
+			</div>
+		
+		</div>
+		
+		<div class="card mt-3">
+			<div class="card-header">window Methods</div>
+			<div class="card-body">
+				<button  class="btn btn-info" onclick="func2()">다이얼로그 관련 매소드</button>
+			</div>
+		
+		</div>
+		
+			<div class="card mt-3">
+			<div class="card-header">window Methods</div>
+			<div class="card-body">
+				<button  class="btn btn-info" onclick="func3()">다이얼로그 관련 매소드</button>
+			</div>
+		
+		</div>
+	</body>
+</html>
