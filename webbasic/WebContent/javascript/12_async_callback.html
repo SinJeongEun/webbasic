@@ -14,6 +14,7 @@
 			var timerId2;
 			
 			function func1() {
+				console.log("start");
 // 				timerId1 = window.setTimeout(function() {
 // 					console.log("알람1이 울립니다.")
 // 				}, 3000);  //3000ms 후에 실행된다.
@@ -23,6 +24,8 @@
 				timerId1 = window.setTimeout(() => {
 					console.log("알람3이 울립니다.")
 				}, 3000);
+				
+				console.log("end");
 			}
 			
 			function alarm() {
